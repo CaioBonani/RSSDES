@@ -1,4 +1,4 @@
-#![allow(non_snake_case)]
+#![allow(warnings)]
 
 fn P10(key: &String) -> String {
 
@@ -92,7 +92,7 @@ fn shift2 (key: String) -> String{
     return shift2;
 }
 
-fn K1 (mut key:  &String) -> String{
+fn K1 (key:  &String) -> String{
 
 
     let buffer = P10(key);
@@ -103,7 +103,7 @@ fn K1 (mut key:  &String) -> String{
     return K1;
 }
 
-fn K2 (mut key:  &String) -> String{
+fn K2 (key:  &String) -> String{
 
     let buffer = P10(key);
     let buffer = shift1(buffer);
